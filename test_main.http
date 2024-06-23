@@ -5,14 +5,28 @@ Accept: application/json
 
 ###
 
+GET http://127.0.0.1:8082/
+Accept: application/json
+
+###
+
 # Test the /admission endpoint with patient type A
 POST http://127.0.0.1:8082/admission
 Content-Type: application/json
 Accept: application/json
 
 {
-  "patient_type": "B",
+  "patient_type": "EM",
   "admission_date": 1719210000
 }
 
 ###
+
+
+POST http://127.0.0.1:8082/er
+Content-Type: application/json
+Accept: application/json
+
+{
+  "patient_id": 1
+}

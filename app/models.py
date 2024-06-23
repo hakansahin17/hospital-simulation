@@ -8,6 +8,7 @@ class Patient(Base):
     id = Column(Integer, primary_key=True, index=True)
     patient_type = Column(String(2))
     diagnosis = Column(String(2))
+    nursing_department = Column(String(1))
     admission_date = Column(Integer)
     is_treated = Column(Boolean)
 
